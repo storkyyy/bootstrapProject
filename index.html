@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-wid1th, initial-scale=1" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster%7COpen+Sans" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster%7COpen+Sans" />
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -286,35 +288,15 @@
         </div>
     </footer>
 
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <!-- endbuild-->
 
-
-    <!-- Shoud move to external file -->
-    <script>
-        //Carousel controls
-        $(function() {
-
-            //set cycle interval to 2 seconds
-            $(".carousel").carousel( { interval: 2000 } );
-
-            //Toggle play/pause on main carousel
-            $("#carouselButton").click(function(){
-                if($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-
-        });
-    </script>
 </body>
 
 </html>
