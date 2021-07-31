@@ -3,6 +3,8 @@ $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-teal: #17a2B8;
+$modal-text-color: white;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
@@ -67,4 +69,19 @@ a:hover {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+
+#reserveModal{
+    .modal-header {
+        background-color: $color-teal;
+        color: $modal-text-color;
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: $modal-text-color;
+    }
 }

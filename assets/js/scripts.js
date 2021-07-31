@@ -17,4 +17,14 @@ $(function() {
         }
     });
 
+    //On click of Reserve Campsite button in navbar
+    $("#reserveButton").click(function(){
+        $('#reserveModal').modal('show');
+    });
+
+    //On click of Login button in navbar
+    $("#loginButton").click(function () {
+        $('#loginModal').modal('show');
+    });
 });
+
